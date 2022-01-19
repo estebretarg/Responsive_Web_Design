@@ -6,25 +6,74 @@
     </style>
   </head>
   <body>
-  	<h1 id="title">Survey</h1>
+    <main>
+  	<header>
+      <h1 id="title">Survey</h1>
+    </header>
   	<p id="description">This is a survey-form</p>
     <form id="survey-form">            
       <label id="name-label">Name:
-			<input type="text" id="name" placeholder="Example Smith">
+			  <input type="text" id="name" placeholder="Example Smith" required>
       </label>
 			<label id="email-label">e-mail:
-      <input type="email" id="email" placeholder="example@domain.com">
+        <input type="email" id="email" placeholder="example@domain.com" required>
       </label>
       <label id="number-label">Number:
-			<input type="number" id="number" placeholder="1-111-1111">
-     </label>
-     <label>
-			<input type="button" id="submit">
-    </label>
-			<select id="dropdown">
-				
-			</select>
+			  <input type="number" name="number" id="number" min="11111111111" max="99999999999" class="form-control" placeholder="111-111-1111">
+      </label>
+      <div class="radio">
+        <p>Some radio selections</p>
+        <label>
+          <input name="user-selection" value="radio1" type="radio" class="input-radio">
+          Option1
+        </label>
+        <label>
+          <input name="user-selection" value="radio2" type="radio" class="input-radio">
+          Option2
+        </label>
+        <label>
+          <input name="user-selection" value="radio3" type="radio" class="input-radio">
+          Option3
+        </label>
+        <label>
+          <input name="user-selection" value="radio4" type="radio" class="input-radio">
+          Option4
+        </label>
+      </div>
+      <select id="dropdown">
+        <option disabled selected value>Select an option</option>
+        <option value="option1">option 1</option>
+        <option value="option2">option 2</option>
+        <option value="option3">option 3</option>
+        <option value="option4">option 4</option>
+      </select>
+      <div class="checkbox">
+        <p>Some checkbox selections</p>
+        <label>
+          <input name="user-selection" value="CB1" type="checkbox" class="input-radio">
+          Option1
+        </label>
+        <label>
+          <input name="user-selection" value="CB2" type="checkbox" class="input-radio">
+          Option2
+        </label>
+        <label>
+          <input name="user-selection" value="CB3" type="checkbox" class="input-radio">
+          Option3
+        </label>
+        <label>
+          <input name="user-selection" value="CB4" type="checkbox" class="input-radio">
+          Option4
+        </label>
+      </div>
+      <span></span>
+      <div>
+      <textarea id="comments" class="input-textarea" placeholder="Any idea? Share it with Us!" spellcheck="false" data-ms-editor="true"></textarea>
+      </div>
+      <button type="submit" id="submit" class="submit-button">Submit</button>
     </form>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
   <footer>
   </footer>
