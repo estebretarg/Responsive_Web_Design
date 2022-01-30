@@ -2,31 +2,54 @@
 <html>
   <head>
     <style>
+      body {
+        display: flex;
+        flex-direction: column;
+      }
 
+      #navbar {
+        display: block;
+        width: 100%;
+        background-color: azure;
+        position: fixed;
+        height: 2.5rem;
+        padding: 0.5rem;
+        margin-top: -20px;
+        margin-bottom: 2.5rem;
+      }
+
+      #welcome-section {
+        height: 100vh;
+        display: flexbox;
+
+      }
+
+      @media screen {
+        
+      }
     </style>
   </head>
   <body>
-    <nav id="navbar">
-      <header>On this page:</header>
-      <li><a href="#welcome-section" class="nav-link">Information1</a></li>
-      <li><a href="#projects" class="nav-link">Information1</a></li>
-    </nav>
     <main>
-      <section id="welcome-section">
-        <h1>Projects portfolio</h1>
-        <p>This is a paragraph</p>
-      </section>
-      <section id="projects">
-        <div class="project-tile">
-          <h2>Project title</h2>
-          <p>This is a project description</p>
-          <a href="Tribute_page.html" target="_blank">Project repository</a>
-        </div>
+    <nav id="navbar">
+      <a href="#welcome-section" type="button">Home</a>
+      <a href="#projects" type="button">Projects</a>
+    </nav>
+    <section id="welcome-section">
+      <h1>Projects portfolio</h1>
+      <p>This is a paragraph</p>
+    </section>
+    <section id="projects">
+      <div class="project-tile">
+        <h2>Project title</h2>
+        <p>This is a project description</p>
+        <a href="Tribute_page.html" target="_blank">Project repository</a>
+      </div>
       </section>
     </main>
   </body>
   <footer>
-    <a id="profile-link" href="https://github.com/estebretarg">
+    <a id="profile-link" href="https://github.com/estebretarg" target="_blank">
       <img src="github_logo.png" alt="github" style="width: 50px; height: 50px;">
     </a>
   </footer>
