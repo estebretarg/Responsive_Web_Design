@@ -17,7 +17,38 @@
         and time-consuming. Automated provisioning does in seconds
         what could typically take an IT staff hours to do manually.</p>
         <h2>AD & AAD</h2>
-        <a href="https://docs.microsoft.com/es-es/learn/paths/active-directory-domain-services/">Active Directory Domain Services</a>
+        <h3>Active Directory Domain Services (AD DS)</h3>
+        <p>Form the basis of enterprise networks executed in Windows OS <br>
+        The AD DS data base is the central store for all objects in the domain, such as user accounts, computer accounts, and groups. <br>
+        AD DS provides a searchable hierarchical directory and a method for applying configuration and security settings to objects in an enterprise</p>
+        <p>Through AD DS you can:</p>
+        <ul>
+          <li>Applications installation, configuration, and update.</li>
+          <li>Administration of the security infrastructure</li>
+          <li>Enabling the remote access service and DirectAccess</li>
+          <li>Digital certificates emission and administration</li>
+        </ul>
+        <h3>Logic Components</h3>
+        <p>AD DS logic components are structures that are used to implement adequate AD DS design for an organization.</p>
+        <table>
+          <tr>
+           <th>Logic component</th>
+           <th>Description</th>
+          </tr>
+          <tr>
+            <td>Partition</td>
+            <td><p>A partition, or a nomenclature context, is a part of the AD DS database. Although the database consists of a file named Ntds.dit, different partitions contain different data. For example, the schema partition contains a copy of the Active Directory schema. The configuration partition contains the forest configuration objects, and the domain partition contains the domain-specific users, computers, groups, and other objects. Active Directory stores partitions copies in various domain controllers and updates them through directory replication.</p></td>
+          </tr>
+          <tr>
+            <td>Schema</td>
+            <td><p>A schema is the set of definitions of object types and attributes that are used to define objects created in AD DS.</p></td>
+          </tr>
+          <tr>
+            <td>Domain</td>
+            <td><p>A domain is a logic administrative container for objects as users and computers. A domain is assigned to an specific partition, and can be organized with principal-secondary relationships respect to other domains.</p></td>
+          </tr>
+        </table>
+        <a href="https://docs.microsoft.com/es-es/learn/paths/active-directory-domain-services/">ADDS Microsoft Learning</a>
     </main>
   </body>
 </html>
